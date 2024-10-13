@@ -1,6 +1,4 @@
-Here's a detailed `README.md` file and a short description for your GitHub repository:
 
-### GitHub Repository Description
 **DonorLink** - A MERN stack web app connecting blood donation prospects directly to donors, facilitating quick responses during emergencies by bypassing traffic in local blood banks.
 
 ---
@@ -128,9 +126,6 @@ The following API endpoints are available:
 
 We welcome contributions! Please fork the repository and create a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
