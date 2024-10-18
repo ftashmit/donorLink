@@ -4,7 +4,7 @@ import Featured from "../components/Featured";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact"
-
+import TestimonialCarousel from "../components/Carausal"
 const Home = () => {
   return (
     <div>
@@ -15,10 +15,15 @@ const Home = () => {
       <Element name="featured">
         <Featured />
       </Element>
-      <Element name="contact">
-        <Contact />
+      <Element name="testimonial">
+        <TestimonialCarousel />
       </Element>
+      {/* <Element name="contact">
+        <Contact />
+      </Element> */}
+      <Element name="footer">
       <Footer />
+      </Element>
     </div>
   )
 }
