@@ -5,35 +5,35 @@ const Footer = () => {
     <div className="bg-blue-100 px-[200px] h-[60vh] mt-[50px]">
       <div className="flex justify-between py-[5%]">
         <div>
-          <img src="/IMG_7495.PNG" alt="" height={200} width={200} /> {/* Updated image path */}
-          <p className="mt-2">Saving lives, one donation at a time.</p>
+          <img src="/IMG_7495.PNG" alt="" height={200} width={200} /> 
+          <p className="mt-[-30px]">Saving lives, one donation at a time.</p>
         </div>
 
         <div>
           <h3 className="text-xl font-semibold">Quick Links</h3>
           <ul className="mt-2 space-y-2">
             <li>
-              <a href="#" className="hover:underline text-blue-600">
+              <a href="#" className="hover:underline">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline text-blue-600">
+              <a href="#" className="hover:underline">
                 About Us
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline text-blue-600">
+              <a href="#" className="hover:underline">
                 Donate
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline text-blue-600">
+              <a href="#" className="hover:underline">
                 Contact
               </a>
             </li>
-            <Link to="/login">
-              <li className="text-blue-600">Admin</li>
+            <Link className="" to="/login">
+              <li className="">Admin</li>
             </Link>
           </ul>
         </div>
