@@ -25,18 +25,20 @@ const Prospect=require("../models/Prospect");
  };
 
  //UPDATE PROSPECT
- const updateProspect= async(req,res)=>{
+ const updateProspect = async (req, res) => {
     try {
-        const updateProspect= await Prospect.findByIDAndUpdate(
-            req.params.id,
-            {$set:req.body},
-            {new:true}
-        );
-        res.status(201).json(updateProspect);
+      const updateProspect = await Prospect.findByIdAndUpdate(
+        req.params.id,
+        { $set: req.body },
+        { new: true }
+      );
+      res.status(201).json(updateProspect);
     } catch (error) {
-        res.status(500).json(error);
+      console.error("Error updating prospect:", error); // Log the error
+      res.status(500).json({ message: "Internal Server Error", error: error.message });
     }
- };
+  };
+
 
 // GET ONE PROSPECT
 
