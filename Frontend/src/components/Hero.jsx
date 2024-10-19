@@ -1,23 +1,28 @@
+import illustration from "../assets/illustration.png";
 const Hero = () => {
-  return (
-    <div className="relative bg-[url('/BloodPressurCheck900x450.jpg')] bg-no-repeat bg-cover bg-center h-[85vh] px-[200px]">
-      <div className="absolute inset-0 bg-black opacity-50"></div> 
-      <div className="flex flex-col text-white w-[50%] pt-[10%] relative"> 
-        <span className="text-[30px] mt-3 font-bold">Donate blood, and gift life a chance to thrive.</span>
-        <h1 className="text-[38px] mt-3 font-bold">
-          Your Donation Can Create Smiles In The Lives of Others.
-        </h1>
-        <div className="flex items-center mt-[20px]">
-          <button className="bg-blue-500 p-[10px] w-[200px] text-white cursor-pointer mr-9 font-bold">
-            Donate Now!
-          </button>
-          <button className="bg-blue-300 p-[10px] w-[200px] text-white cursor-pointer font-bold">
-            CALL: +91 9876543210
-          </button>
-        </div>
-      </div>
-    </div>
-  );
+	return (
+		<div className="flex justify-between items-center  mx-auto container">
+			<div className=" text-white w-1/2">
+				<span className="text-2xl mt-3 text-red-500 font-bold">
+					Donate blood, Save life!
+				</span>
+				<h1 className="text-6xl leading-normal mt-3 text-black">
+					Your <span className="text-red-500 font-bold">Link 🩸</span> to
+					a life-saving moment.
+				</h1>
+
+				<div className="flex items-center gap-10 my-10">
+					<button className="bg-red-500 p-4 w-[200px] rounded-lg text-white cursor-pointer">
+						Donate Now
+					</button>
+					<button className="bg-gray-500 p-4 w-[200px] rounded-lg text-white cursor-pointer">
+						CALL : (+125) 262 728
+					</button>
+				</div>
+			</div>
+			<img className="w-[500px]" src={illustration} alt="" />
+		</div>
+	);
 };
 
 export default Hero;
