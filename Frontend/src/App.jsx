@@ -33,27 +33,27 @@ function App() {
       element: user.currentUser ? <Layout /> : <Navigate to="/login" />,
       children: [
         {
-          path: "", // Default to /admin
+          path: "/admin", // Default to /admin
           element: <Admin />,
         },
         {
-          path: "donors",
+          path: "/admin/donors",
           element: <Donors />,
         },
         {
-          path: "prospects",
+          path: "/admin/prospects",
           element: <Prospects />,
         },
         {
-          path: "newdonor",
+          path: "/admin/newdonor",
           element: <NewDonor />,
         },
         {
-          path: "donor/:id",
+          path: "/admin/donor/:id",
           element: <Donor />,
         },
         {
-          path: "prospect/:id",
+          path: "/admin/prospect/:id",
           element: <Prospect />,
         },
       ],

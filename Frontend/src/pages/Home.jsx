@@ -15,12 +15,14 @@ const Home = () => {
       <Element name="featured">
         <Featured />
       </Element>
+      <Element name="contact">
+        <Contact />
+      </Element>
+      
       <Element name="testimonial">
         <TestimonialCarousel />
       </Element>
-      {/* <Element name="contact">
-        <Contact />
-      </Element> */}
+      
       <Element name="footer">
       <Footer />
       </Element>
@@ -28,4 +30,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;
