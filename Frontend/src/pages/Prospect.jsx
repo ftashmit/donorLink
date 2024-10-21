@@ -13,7 +13,7 @@ const Prospect = () => {
   useEffect(() => {
     const getProspect = async () => {
       try {
-        const res = await publicRequest.get(`/prospects/find/${prospectId}`);
+        const res = await publicRequest.get("/prospects/find/" + prospectId);
         setProspect(res.data);
       } catch (error) {
         console.log(error);
@@ -46,35 +46,35 @@ const Prospect = () => {
       <div className="m-[20px] h-[80vh] w-[450px] shadow-lg">
         <h2 className="font-semibold m-[30px]">Prospect</h2>
         <ul className="m-[30px]">
-          <li className="mt-[10px] font-semibold">
-            <strong >Name:</strong> {prospect.name}
+          <li className="mt-[10px]">
+            <strong className="font-semibold">Name:</strong> {prospect.name}
           </li>
-          <li className="mt-[10px] font-semibold">
-            <strong >Address:</strong>
+          <li className="mt-[10px]">
+            <strong className="font-semibold">Address:</strong>
             {prospect.address}
           </li>
-          <li className="mt-[10px] font-semibold">
-            <strong >Tel:</strong>
+          <li className="mt-[10px]">
+            <strong className="font-semibold">Tel:</strong>
             {prospect.tel}
           </li>
-          <li className="mt-[5px] font-semibold">
-            <strong >Blood Type:</strong>
+          <li className="mt-[5px]">
+            <strong className="font-semibold">Blood Type:</strong>
             {prospect.bloodgroup}
           </li>
-          <li className="mt-[5px font-semibold]">
-            <strong >Disease:</strong>
+          <li className="mt-[5px]">
+            <strong className="font-semibold">Disease:</strong>
             {prospect.diseases}
           </li>
-          <li className="mt-[5px] font-semibold">
-            <strong>Date:</strong>
+          <li className="mt-[5px]">
+            <strong className="font-semibold">Date:</strong>
             {prospect.date}
           </li>
-          <li className="mt-[5px] font-semibold">
-            <strong >Weight:</strong>
+          <li className="mt-[5px]">
+            <strong className="font-semibold">Weight:</strong>
             {prospect.weight}Kg
           </li>
-          <li className="mt-[5px] font-semibold">
-            <strong >Status:</strong>pending
+          <li className="mt-[5px]">
+            <strong className="font-semibold">Status:</strong>pending
           </li>
         </ul>
         <span className="block m-[10px]">

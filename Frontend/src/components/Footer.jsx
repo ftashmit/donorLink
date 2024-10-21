@@ -6,49 +6,49 @@ const Footer = () => {
       <div className="flex justify-between py-[5%]">
         <div>
           <img src="/IMG_7495.PNG" alt="" height={200} width={200} /> 
-          <p className="mt-[-2 font-normal0px] font-medium">Saving lives, one donation at a time.</p>
+          <p className="mt-[-30px]">Saving lives, one donation at a time.</p>
         </div>
 
         <div>
           <h3 className="text-xl font-semibold">Quick Links</h3>
           <ul className="mt-2 space-y-2">
             <li>
-              <a href="/" className="hover:underline font-normal">
+              <a href="#" className="hover:underline">
                 Home
               </a>
             </li>
             <li>
-              <a href="/" className="hover:underline font-normal">
+              <a href="#" className="hover:underline">
                 About Us
               </a>
             </li>
             <li>
-              <a href="/" className="hover:underline font-normal">
+              <a href="#" className="hover:underline">
                 Donate
               </a>
             </li>
             <li>
-              <a href="/" className="hover:underline font-normal">
+              <a href="#" className="hover:underline">
                 Contact
               </a>
             </li>
             <Link className="" to="/login">
-              <li className="font-light text-blue-500 mt-2 hover:text-red-500">Admin</li>
+              <li className="">Admin</li>
             </Link>
           </ul>
         </div>
 
         <div className="w-full md:w-1/3">
           <h3 className="text-xl font-semibold">Contact Us</h3>
-          <p className="mt-2 font-normal">Nariyal Point, Mumbai, Maharashtra, India</p>
-          <p className="mt-2 font-normal">Phone: +91 9876543210</p>
-          <p className="mt-2 font-normal">Email: info@donorlink.com</p>
+          <p className="mt-2">Nariyal Point, Mumbai, Maharashtra, India</p>
+          <p className="mt-2">Phone: +91 9876543210</p>
+          <p className="mt-2">Email: info@donorlink.com</p>
         </div>
       </div>
       <div className="mt-8 border-t border-blue-800 pt-4 text-center">
-        <p className="font-light">&copy; 2024 DonorLink. All rights reserved.</p>
+        <p>&copy; 2024 DonorLink. All rights reserved.</p>
         <div className="flex justify-center space-x-4 mt-4">
-          <a href="https://github.com/ftashmit/donorLink" className="hover:text-blue-400">
+          <a href="#" className="hover:text-blue-400">
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M22 12.08c0-5.522-4.477-10-10-10S2 6.558 2 12.08c0 4.411 3.07 8.083 7.305 9.27.535.098.73-.233.73-.518 0-.255-.009-.933-.014-1.832-2.97.647-3.595-1.433-3.595-1.433-.486-1.235-1.187-1.564-1.187-1.564-.97-.663.073-.65.073-.65 1.07.074 1.635 1.106 1.635 1.106.953 1.634 2.502 1.162 3.113.889.098-.695.373-1.163.68-1.43-2.373-.271-4.868-1.188-4.868-5.288 0-1.168.417-2.124 1.1-2.874-.111-.271-.478-1.363.104-2.842 0 0 .9-.288 2.95 1.095.856-.241 1.774-.36 2.688-.364.914.004 1.832.123 2.688.364 2.047-1.384 2.946-1.095 2.946-1.095.584 1.48.217 2.572.106 2.842.685.75 1.1 1.706 1.1 2.874 0 4.111-2.498 5.014-4.878 5.281.384.33.726.983.726 1.98 0 1.429-.013 2.583-.013 2.933 0 .287.193.62.735.515C18.93 20.16 22 16.491 22 12.08z" />
             </svg>

@@ -50,7 +50,7 @@ export default function TestimonialCarousel() {
 						{testimonials.map((testimonial, index) => (
 							<div
 								key={testimonial.id}
-								className={`absolute inset-0 w-full h-full flex items-center justify-center p-6 transition-opacity duration-500 ${
+								className={`absolute inset-0 w-full h-full flex items-center justify-center p-6 transition-opacity duration-1000 ${
 									index === currentTestimonial ? "opacity-100" : "opacity-0"
 								}`}
 								aria-hidden={index !== currentTestimonial}
@@ -61,11 +61,11 @@ export default function TestimonialCarousel() {
 										alt={testimonial.name}
 										className="w-20 h-20 rounded-full mb-4"
 									/>
-									<p className="text-base md:text-lg lg:text-lg text-gray-500 mb-2 font-normal ">
+									<p className="text-base md:text-lg lg:text-xl text-gray-700 mb-2">
 										{testimonial.text}
 									</p>
 
-									<p className="font-semibold text-red-500 whitespace-nowrap">
+									<p className="font-semibold text-red-600 whitespace-nowrap">
 										{testimonial.name}
 									</p>
 								</div>

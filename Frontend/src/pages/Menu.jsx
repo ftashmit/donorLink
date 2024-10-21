@@ -56,38 +56,38 @@ const Menu = () => {
         </Link>
         <hr className="w-full my-[20px] border-gray-300" />
         <Link
-          to="/admin/donor"
-          onClick={() => handleLinkClick("/admin/donor")}
+          to="/admin/donors"
+          onClick={() => handleLinkClick("/admin/donors")}
         >
           <li
             className={`flex items-center  text-[20px]  cursor-pointer mt-[20px] transition-colors duration-300 ${
-              activeLink === "/admin/donor"
+              activeLink === "/admin/donors"
                 ? "bg-red-300 p-[10px] w-[200px] text-white"
                 : ""
             }`}
           >
             <FaBox
               className={`mr-[15px] ${
-                activeLink === "/admin/donor" ? "text-white" : "text-red-500"
+                activeLink === "/admin/donors" ? "text-white" : "text-red-500"
               } `}
             />
             Donors
           </li>
         </Link>
         <Link
-          to="/admin/prospect"
-          onClick={() => handleLinkClick("/admin/prospect")}
+          to="/admin/prospects"
+          onClick={() => handleLinkClick("/admin/prospects")}
         >
           <li
             className={`flex items-center  text-[20px]  cursor-pointer mt-[20px] transition-colors duration-300 ${
-              activeLink === "/admin/prospect"
+              activeLink === "/admin/prospects"
                 ? "bg-red-300 p-[10px] w-[200px] text-white"
                 : ""
             }`}
           >
             <FaUsers
               className={`mr-[15px] ${
-                activeLink === "/admin/prospect" ? "text-white" : "text-red-500"
+                activeLink === "/admin/prospects" ? "text-white" : "text-red-500"
               } `}
             />
             Prospects

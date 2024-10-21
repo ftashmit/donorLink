@@ -5,15 +5,17 @@ import { useState } from "react";
 import { publicRequest } from "../requestMethods";
 const Prospects = () => {
 
-  const [prospects, setProspects] = useState([]);
+  const [prospects, setDonors] = useState([]);
 
   useState(() =>{
     const getAllProspects = async() =>{
           try {
-            const res = await publicRequest.get("/prospects");
-            setProspects(res.data);
+            const res = await publicRequest.get("/prospects",{
+              
+            });
+            setDonors(res.data)
           } catch (error) {
-            console.log(error);
+            console.log(error)
           }
     }
     getAllProspects();
@@ -63,7 +65,10 @@ const Prospects = () => {
         <h1 className="m-[20px] text-[20px]">All Prospects</h1>
       </div>
       <div className="mx-[30px]">
-      <DataGrid rows={prospects} getRowId={(row) => row._id} checkboxSelection columns={columns} />
+        <DataGrid columns={columns} 
+        checkboxSelection 
+        getRowId={(row) => row._id}
+        rows={prospects} />;
       </div>
     </div>
   );
