@@ -18,7 +18,7 @@ const Donor = () => {
   useEffect(() => {
     const getDonor = async () => {
       try {
-        const res = await publicRequest.get("/donors/find/" + donorId);
+        const res = await publicRequest.get(`/donors/find/${donorId}`);
         setDonor(res.data);
       } catch (error) {
         console.log(error);
@@ -29,7 +29,7 @@ const Donor = () => {
 
   const handleUpdate = async () => {
     try {
-      await publicRequest.put(`/donors/${donor._id}`, inputs);
+      await publicRequest.put(`/donor/${donor._id}`, inputs);
       window.location.reload();
     } catch (error) {
       console.log(error);

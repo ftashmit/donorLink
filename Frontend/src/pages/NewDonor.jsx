@@ -14,13 +14,16 @@ const NewDonor = () => {
 
   const handleAddDonors = async () => {
     try {
-      await publicRequest.post("/donors", inputs);
+      await publicRequest.post("/donors", inputs, {
+        headers: {token: `Bearer ${user.currentUser.accessToken}`}
+      });
+      toast.success("Donor has been successfully added to the database");
       setInputs({});
-      toast.success("Donor has been successfully saved to the database.");
     } catch (error) {
-      toast.warning("Make sure you have fill all fields");
+      toast.warning(error.message);
     }
   };
+
   return (
     <div className="m-[30px] bg-[#fff] p-[20px]">
       <h2 className="font-semibold">New Donor</h2>

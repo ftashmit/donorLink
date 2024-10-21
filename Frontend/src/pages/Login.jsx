@@ -11,7 +11,7 @@ const Login = () => {
   const error = useSelector((state) => state.user.error);
   const dispatch = useDispatch();
 
-  console.log(user.currentUser);
+  // console.log(user.currentUser);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -33,7 +33,7 @@ const Login = () => {
       <div className="flex items-center bg-white shadow-lg rounded-lg overflow-hidden">
         <div className="h-[500px] w-[500px] transition-transform duration-700 ease-in-out transform hover:scale-105">
           <img
-            src="/hero1.jpg"
+            src="\assets\illustration.png"
             alt="Login"
             className="object-cover h-full w-full"
           />
@@ -44,19 +44,19 @@ const Login = () => {
           </h2>
           <form className="space-y-5">
             <div>
-              <label htmlFor="email" className="block text-gray-600 mb-1">
+              <label htmlFor="email" className="block text-gray-600 mb-1 font-semibold">
                 Email
               </label>
               <input
                 type="email"
                 id="email"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 font-medium"
                 placeholder="example@example.com"
                 onChange={(e) => setEmail(e.target.value.replace(/\s/g, ''))}
               />
             </div>
             <div>
-              <label htmlFor="password" className="block text-gray-600 mb-1">
+              <label htmlFor="password" className="block text-gray-600 mb-1 font-semibold">
                 Password
               </label>
               <input
@@ -69,17 +69,17 @@ const Login = () => {
             </div>
             <button
               type="submit"
-              className="w-full py-2 bg-red-500 text-white font-bold rounded-md transition-transform duration-300 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 transform hover:scale-105"
+              className="w-full py-2 bg-green-500 text-white font-bold rounded-md transition-transform duration-300 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 transform hover:scale-105"
               onClick={handleLogin}
             >
                {loading ? "loading ..." : "Login"}
                {user.currentUser ? <Navigate to="/admin" /> : ""}
             </button>
-            {error && <span style={{color:'red'}}>Please ensure that your staff ID and password are entered correctly before attempting to log in. Double-check your credentials and try again.</span>}
+            {error && <span  className="text-red-500 font-light mt-4">Please ensure that your staff ID and password are entered correctly before attempting to log in. Double-check your credentials and try again.</span>}
           </form>
-          <div className="mt-4 text-sm text-gray-600">
-            <span>Don`t have an account? </span>
-            <a href="#" className="text-red-500 hover:underline">
+          <div className="mt-4 text-sm font-semibold text-gray-600">
+            <span>Don't have an account? </span>
+            <a href="/" className="text-blue-500 hover:underline">
               Sign up
             </a>
           </div>
