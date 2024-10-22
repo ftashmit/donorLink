@@ -33,7 +33,7 @@ const Login = () => {
       <div className="flex items-center bg-white shadow-lg rounded-lg overflow-hidden">
         <div className="h-[500px] w-[500px] transition-transform duration-700 ease-in-out transform hover:scale-105">
           <img
-            src="\assets\illustration.png"
+            src="/hero1.jpg"
             alt="Login"
             className="object-cover h-full w-full"
           />
