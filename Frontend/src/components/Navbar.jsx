@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 const Navbar = () => {
 	return (
 			<div className="flex gap-10  h-[100px] ml-20 mb-10 mr-20 justify-between ">
-			<img src="/IMG_7495.PNG" alt="logo"  height={200} width={200} />
+			<img src="/IMG_7495.PNG" alt="logo"  height={250} width={210} />
 
 			<div className="flex items-center mr-50 gap-10 cursor-pointer justify-end">
 				<Link

@@ -16,8 +16,8 @@ const Hero = () => {
         <span className="text-2xl mt-3 text-red-500 font-bold">
           Donate blood, Save life!
         </span>
-        <h1 className="text-5xl leading-normal mt-3 text-black font-bold">
-          Your <span className="text-red-600 font-extrabold">Link🩸</span> to
+        <h1 className="text-5xl leading-normal mt-3 text-black font-extrabold ">
+          Your <span className="text-red-500 font-extrabold gradient-text ">Link</span> to
           a life-saving moment.
         </h1>
 
@@ -33,7 +33,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <img className="w-[400px] h-[400px] mr-20" src={illustration} alt="" />
+      <img className="w-[600px] h-[500px] mr-20 px-[-20]" src={illustration} alt="" />
     </div>
   );
 };
