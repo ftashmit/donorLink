@@ -26,8 +26,7 @@ const Navbar = () => {
 					to="contact"
 					smooth={true}
 					duration={1000}
-					className="mr-3 text-[18px] font-medium  hover:text-orange-700"
-				>
+					className="mr-3 text-[18px] font-medium  hover:text-orange-700">
 					Contact Us
 				</Link>
 				<Link
