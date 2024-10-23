@@ -28,9 +28,9 @@ body{
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #ff0000, #ff7f00, #ffbf00, #ff0080, #8a2be2);
+  background: linear-gradient(90deg, #ff7f00, #ff0000, #9332ee, #ff0000, #ff7f00 , #ff0000);
   background-size: 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradient-animation 8s ease-in-out infinite;
+  animation: gradient-animation 10s ease-in-out infinite;
 }

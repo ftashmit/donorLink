@@ -3,8 +3,9 @@ import illustration from "../assets/illustration.png";
 
 const Hero = () => {
   const scrollToContact = () => {
+    // console.log("scroller triggered");
     scroller.scrollTo('contact', {
-      duration: 800,
+      duration: 1000,
       delay: 0,
       smooth: 'easeInOutQuart',
     });
@@ -29,7 +30,7 @@ const Hero = () => {
             Donate Now
           </button>
           <button className="bg-gray-500 p-4 w-[250px] rounded-lg text-white cursor-pointer font-medium hover:bg-gray-600">
-            CALL : (+125)262728
+            CALL : +91 9876543210
           </button>
         </div>
       </div>

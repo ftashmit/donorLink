@@ -41,8 +41,8 @@ export default function TestimonialCarousel() {
   }, [])
 
     return (
-			<div className="py-20">
-				<h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-center">
+			<div className="py-20 bg-gradient-to-b from-white to-blue-100">
+				<h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-center mb-4">
 					Testimonials
 				</h1>
 				<div className="w-full max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
